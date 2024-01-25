@@ -5,10 +5,11 @@ import { getBikes } from "../../managers/bikeManager";
 export default function BikeList({ setDetailsBikeId }) {
   const [bikes, setBikes] = useState([]);
 
+  //define the get api call and what it will set here
   const getAllBikes = () => {
     getBikes().then(setBikes);
   };
-
+//then the use effect runs it
   useEffect(() => {
     getAllBikes();
   }, []);

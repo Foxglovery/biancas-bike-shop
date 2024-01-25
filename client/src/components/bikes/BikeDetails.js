@@ -9,6 +9,7 @@ export default function BikeDetails({ detailsBikeId }) {
     getBikeById(id).then(setBike);
   };
 
+  //if bike details was set in another componenet, then get details for that bike
   useEffect(() => {
     if (detailsBikeId) {
       getBikeDetails(detailsBikeId);

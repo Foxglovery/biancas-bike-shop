@@ -2,6 +2,8 @@ using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using BiancasBikes.Data;
+// using Microsoft.Extensions.DependencyInjection;
+// using Npgsql;
 
 var builder = WebApplication.CreateBuilder(args);
 
